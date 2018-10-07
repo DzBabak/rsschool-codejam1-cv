@@ -18,21 +18,50 @@ body {
   margin: 0 auto;
 }
 
-.navigation-links {
+.navigation-links, .social-links {
   list-style: none;
   padding: 15px 0;
   font-size: 0;
+  display: inline-block;
 }
 
-.navigation-link {
+.social-links {
+  float: right;
+}
+
+.navigation-link, .social-link {
+  font-size: 20px;
   display: inline-block;
   margin-right: 10px;
 }
 
-.navigation-links .navigation-link > a {
+.navigation-link:last-child, .social-link:last-child {
+  margin-right: 0;
+}
+
+.navigation-link > a,
+.social-link > a {
   text-decoration: none;
   cursor: pointer;
-  font-size: 16px;
+  color: white
+}
+
+.linked-link:before,
+.git-link:before,
+.vk-link:before {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.linked-link:before {
+  content: '\f08c';
+}
+
+.git-link:before {
+  content: '\f092';
+}
+
+.vk-link:before {
+  content: "\f189";
 }
 
 main {
@@ -59,10 +88,10 @@ section:last-child {
   flex: 0 0 100%;
   padding-bottom: 20px;
 }
+
 .summary-figure {
   max-width: 250px;
 }
-
 
 .summary-figure > img {
   border-radius: 50%;
