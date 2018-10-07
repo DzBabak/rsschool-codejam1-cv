@@ -1,0 +1,215 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.page-content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.navigation-links, .social-links {
+  list-style: none;
+  padding: 15px 0;
+  font-size: 0;
+  display: inline-block;
+}
+
+.social-links {
+  float: right;
+}
+
+.navigation-link, .social-link {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navigation-link:last-child, .social-link:last-child {
+  margin-right: 0;
+}
+
+.navigation-link > a,
+.social-link > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white
+}
+
+.linked-link:before,
+.git-link:before,
+.vk-link:before {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.telephone-link:before {
+  color: white;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.linked-link:before {
+  content: '\f08c';
+}
+
+.git-link:before {
+  content: '\f092';
+}
+
+.vk-link:before {
+  content: "\f189";
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+section {
+  color: #00887a;
+  padding: 20px 0;
+  border-bottom: 1px solid lightslategrey;
+  min-height: 80vh;
+}
+
+section:before {
+  display: block;
+  content: " ";
+  margin-top: 0;
+  height: 54px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+section > h2{
+  padding-bottom: 20px;
+}
+
+section > article{
+  padding-bottom: 15px;
+}
+
+section > article:last-child {
+  padding-bottom: 0;
+}
+
+section > article > h3 {
+  padding-bottom: 10px;
+}
+
+section:last-child {
+  border: 0;
+}
+
+section > h2 {
+  padding-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.summary-figure {
+  max-width: 250px;
+}
+
+.summary-figure > img {
+  border-radius: 50%;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.summary-text {
+  max-width: 600px;
+  padding-left: 50px;
+}
+
+.summary-text > h3 {
+  margin-bottom: 5px;
+}
+
+.summary-figure-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00887a;
+  text-align: center;
+}
+
+.skill-list {
+  list-style: none;
+
+}
+
+.skill-list-item {
+  font-size: 25px;
+}
+
+.skill-item-icon {
+  width: 30px;
+  padding-right: 20px;
+}
+
+
+.section-list {
+padding-left: 50px;
+}
+
+.item-name {
+display: inline-block;
+  min-width: 200px;
+}
+
+.item-description {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+aside {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  max-width: 50px;
+}
+
+.back-to-top {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #77a6f7;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  color: #77a6f7;
+}
+
+header, footer {
+  background: #77a6f7;
+}
+
+header a, footer a {
+  color: #fff;
+}
+
+footer {
+  min-height: 100px;
+  flex-shrink: 0;
+}
+
+.social-links {
+  list-style: none;
+}
