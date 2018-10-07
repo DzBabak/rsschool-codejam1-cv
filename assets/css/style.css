@@ -57,6 +57,12 @@ header {
   font-family: "Font Awesome 5 Brands";
 }
 
+.telephone-link:before {
+  color: white;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
 .linked-link:before {
   content: '\f08c';
 }
