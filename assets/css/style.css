@@ -13,6 +13,11 @@ body {
   flex-direction: column;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+}
+
 .page-content {
   max-width: 1024px;
   margin: 0 auto;
@@ -72,6 +77,16 @@ section {
   color: #00887a;
   padding: 20px 0;
   border-bottom: 1px solid lightslategrey;
+  min-height: 80vh;
+}
+
+section:before {
+  display: block;
+  content: " ";
+  margin-top: 0;
+  height: 54px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 section > h2{
@@ -156,6 +171,24 @@ display: inline-block;
 .item-description {
   padding-left: 20px;
   font-style: italic;
+}
+
+aside {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  max-width: 50px;
+}
+
+.back-to-top {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #77a6f7;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  color: #77a6f7;
 }
 
 header, footer {
