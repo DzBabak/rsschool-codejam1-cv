@@ -74,19 +74,33 @@ section {
   border-bottom: 1px solid lightslategrey;
 }
 
+section > h2{
+  padding-bottom: 20px;
+}
+
+section > article{
+  padding-bottom: 15px;
+}
+
+section > article:last-child {
+  padding-bottom: 0;
+}
+
+section > article > h3 {
+  padding-bottom: 10px;
+}
+
 section:last-child {
   border: 0;
 }
 
-.summary-section {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+section > h2 {
+  padding-bottom: 20px;
 }
 
-.summary-section > h2 {
-  flex: 0 0 100%;
-  padding-bottom: 20px;
+.row {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .summary-figure {
@@ -113,6 +127,20 @@ section:last-child {
   font-weight: bold;
   color: #00887a;
   text-align: center;
+}
+
+.skill-list {
+  list-style: none;
+
+}
+
+.skill-list-item {
+  font-size: 25px;
+}
+
+.skill-item-icon {
+  width: 30px;
+  padding-right: 20px;
 }
 
 header, footer {

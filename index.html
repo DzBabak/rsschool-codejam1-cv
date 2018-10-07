@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>CV</title>
 </head>
@@ -12,9 +12,8 @@
     <header>
         <nav class="page-content">
             <ul class="navigation-links">
-                <li class="navigation-link"><a href="#">Main</a></li>
-                <li class="navigation-link"><a href="#">Summary</a></li>
-                <li class="navigation-link"><a href="#">Skills</a></li>
+                <li class="navigation-link"><a href="#summary">Summary</a></li>
+                <li class="navigation-link"><a href="#skills">Skills</a></li>
                 <li class="navigation-link"><a href="#">GitHub</a></li>
                 <li class="navigation-link"><a href="#">Experience</a></li>
             </ul>
@@ -29,18 +28,41 @@
         <div class="page-content">
             <section class="summary-section" id="summary">
                 <h2>Summary</h2>
-                <figure class="summary-figure">
-                    <img src="./assets/images/avatar.jpg" alt="Dzmitry Babak photo">
-                    <figcaption class="summary-figure-text">Dzmitry Babak</figcaption>
-                </figure>
-                <article class="summary-text">
-                    <h3>Quick self introduction:</h3>
-                    <p>
-                        Hi, my name is Dzmitry, I have always been interested in computer science and my current
-                        goal is becoming good front-end developer who can design and deliver great quality web aplications
-                        and work for EPAM systems. I have a great passion and desire to work hard and aquire
-                        great professional skills.
+                <div class="row">
+                    <figure class="summary-figure">
+                        <img src="./assets/images/avatar.jpg" alt="Dzmitry Babak photo">
+                        <figcaption class="summary-figure-text">Dzmitry Babak</figcaption>
+                    </figure>
+                    <article class="summary-text">
+                        <h3>Quick self introduction:</h3>
+                        <p>
+                            Hi, my name is Dzmitry, I have always been interested in computer science and my current
+                            goal is becoming good front-end developer who can design and deliver great quality web aplications
+                            and work for EPAM systems. I have a great passion and desire to work hard and aquire
+                            great professional skills.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <article>
+                    <p>I have some knowledge of system administration, support, and computer networking.
+                        I have experience in virtualization and the creation of various environments.
+                        In addition, there is experience in the development of software in the Java programming language.
                     </p>
+                </article>
+                <article>
+                    <h3>Key skills:</h3>
+                    <ul class="skill-list">
+                        <li class="skill-list-item"><i class="skill-item-icon fab fa-js"></i>Novice</li>
+                        <li class="skill-list-item"><i class="skill-item-icon fab fa-html5"></i>Novice</li>
+                        <li class="skill-list-item"><i class="skill-item-icon fab fa-java"></i>Novice</li>
+                        <li class="skill-list-item"><i class="skill-item-icon fab fa-git"></i>Intermediate</li>
+                        <li class="skill-list-item"><i class="skill-item-icon fab fa-android"></i>Intermediate</li>
+                        <li class="skill-list-item"><i class="skill-item-icon fab fa-linux"></i>Intermediate</li>
+                        <li class="skill-list-item"><i class="skill-item-icon fab fa-python"></i>Novice</li>
+                    </ul>
                 </article>
             </section>
         </div>
