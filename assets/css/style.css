@@ -143,6 +143,21 @@ section > h2 {
   padding-right: 20px;
 }
 
+
+.jobs-list {
+padding-left: 50px;
+}
+
+.company-name {
+display: inline-block;
+  min-width: 130px;
+}
+
+.job-function {
+  padding-left: 20px;
+  font-style: italic;
+}
+
 header, footer {
   background: #77a6f7;
 }
