@@ -144,16 +144,16 @@ section > h2 {
 }
 
 
-.jobs-list {
+.section-list {
 padding-left: 50px;
 }
 
-.company-name {
+.item-name {
 display: inline-block;
-  min-width: 130px;
+  min-width: 200px;
 }
 
-.job-function {
+.item-description {
   padding-left: 20px;
   font-style: italic;
 }
